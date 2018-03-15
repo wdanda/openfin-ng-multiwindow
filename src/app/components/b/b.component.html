@@ -1,0 +1,16 @@
+<div *ngIf="!popedOut">
+
+  <h2>Component B</h2>
+
+  <div>
+    Received from <span class="comp-a">Component A</span> (via StoreService): <span class="comp-a">[{{message}}]</span>
+  </div>
+
+  <input type="button" class="popout" (click)="popout()" value="Popout Component B" *ngIf="!windowMode">
+  <input type="button" class="popout" (click)="popin()" value="Close Popup" *ngIf="windowMode">
+  
+</div>
+  
+<div *ngIf="popedOut">
+  Component B has been poped out.
+</div>

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(26, 26, 26);
+  color: #C3C3C3;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.boxaround {
+  border: 1px solid white;
+  width: 50%;
+  margin: 20px 20px;
+  padding: 20px 40px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+div {
+  padding: 10px;
+}
+
+.popout {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  color: black !important;
+}
+
+.parent {
+  color: #C3C3C3;
+}
+
+.comp-a {
+  color: lightblue !important;
+}
+
+.comp-b {
+  color: lightcoral !important;
+}

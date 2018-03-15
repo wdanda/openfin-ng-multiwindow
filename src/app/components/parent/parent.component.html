@@ -1,0 +1,42 @@
+<div>
+  <h1>
+    OpenFin Angular Multi-window POC
+  </h1>
+
+  <div class="boxaround">
+    <h2>
+      App Component
+    </h2>
+    <h3>
+      Steps to Reproduce:
+    </h3>
+    <ol>
+      <li>Type anything on Component's A input box</li>
+      <li>Notice how what you type is instantly displayed on Component B</li>
+      <br>
+      <li>Now click on the "Popout Component B" button and move it to another monitor (or visible area)</li>
+      <li>Go back to the main window and type anything on Component's A input box (repeating step 1)</li>
+      <li>Notice how the poped out window (Component B) is not displaying what you are typing on Component A</li>
+    </ol>
+
+
+    <div class="boxaround">
+      <app-component-a></app-component-a>
+    </div>
+    <div class="boxaround">
+      <app-component-b></app-component-b>
+    </div>
+    
+    <p>
+      Challenge: when you open a new window you basically bootstrap a brand new angular app.
+    </p>
+    <p>
+      It would be amazing if somehow OpenFin's platform is able to overcome this by making so you can popout 
+      child windows while keeping the session/context transparently (i.e. without having to update our code to use a communication system like OpenFin's InterApplicationBus or our own in-house built EventListener).
+    </p>
+    <p>
+      In case you guys are able to overcome this, please submit a PR so we can check it out.
+    </p>
+
+  </div>
+</div>
