@@ -8,5 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+alert('********* BOOTSTRAPPING ANGULAR **************');
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
